@@ -1,0 +1,124 @@
+@mixin main-image{
+	position: relative;
+	background-size: cover;
+	height: 600px;
+}
+
+.img-up{
+    @include main-image()
+}
+
+//Galeria
+
+.gallery{
+    margin: 0 0.65rem;
+}
+.gallery-item{
+    height: auto;
+    margin: 0.5rem;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:640px){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 300px);
+        grid-auto-flow: row dense;
+    }
+
+    .gallery-item{
+        margin: 0.7rem;
+    }
+    .gallery-item:first-child{
+        grid-row: span 1;
+    }
+
+    .gallery-item:nth-child(2){
+        grid-column: 2/3;
+        grid-row: span 2;
+    }
+
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(8){
+        grid-row: span 2;
+    }
+}
+
+@media (min-width: 960px){
+    .gallery {
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows:repeat(3, auto-flow) ;
+    }
+    .gallery-item:first-child,
+    .gallery-item:nth-child(7),
+    .gallery-item:nth-child(8){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+.inscripcion--abierta{
+    background-color: green;
+	margin-top: 145px;
+	font-size: 16px;
+	color: white;
+}
+
+.inscripcion--cerrada{
+    background-color: rgb(206, 17, 17);
+	margin-top: 145px;
+	font-size: 16px;
+	color: white;
+}
+
+.text-cabezera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.text-cabezera--dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.text-cabezera--dos span{
+    text-decoration: none;
+    margin: 0 10px;
+}
+.text-cabezera--banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.text-cabezera--banner span{
+    text-decoration: none;
+    margin: 0 10px;
+}
+.text-cabezera span{
+    text-decoration: none;
+    margin: 0 10px;
+}
+.text-cabezera span:hover{
+    color: rgb(206, 17, 17);
+}
+.text-cabezera--dos span:hover{
+    color: rgb(206, 17, 17);
+}
+
+.before-footer{
+    width: 90%;
+    height: 20vh;
+    margin-top: 40px;
+    background-color: rgb(221, 219, 215);
+}
