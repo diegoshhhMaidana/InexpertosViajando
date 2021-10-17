@@ -131,26 +131,26 @@
     .text-cabezera{
         width: 424px;
         font-size: 16px;
-        margin-right: 10px;
-        display: block;
+        margin-right: auto;
+        display: inline;
         flex-direction: row;
         margin-bottom: 0;
     }
     .text-cabezera span{
-        margin-right: 10px;
+        margin-right: 0;
         margin-left: 0;
     }
     .text-cabezera--dos{
         width: 420px;
         font-size: 16px;
         margin-bottom: 20px;
-        margin-right: 10px;
+        margin-right: 0;
         display: block;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .text-cabezera--dos span{
-        margin: -10px 0;
+        margin: 0 0;
     }
     .text-cabezera--banner{
         width: 424px;
@@ -159,7 +159,7 @@
         display: block;
         flex-direction: row;
         margin-bottom: 0;
-        padding-right: 15px;
+        padding-right: 0;
     }
     .containerHome{
         padding: 0;
@@ -195,11 +195,19 @@
     h1{
         font-size: 20px;
     }
+    .carousel{
+        width: 425px;
+    }
     .carousel-item img{
+        width: 100%;
         height: 200px !important;
         margin-bottom: 0;
     }
+    .carousel-indicators{
+        display: none;
+    }
     .tituloPrincipal{
+        margin: 0;
         margin-top: -90px;
     }
     .carousel-control-prev{
