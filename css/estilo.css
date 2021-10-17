@@ -11,6 +11,7 @@
 .gallery-item {
   height: auto;
   margin: 0.5rem;
+  border-radius: 50%;
 }
 
 .gallery-item img {
@@ -145,5 +146,129 @@
   height: 20vh;
   margin-top: 40px;
   background-color: #dddbd7;
+}
+
+@media screen and (max-width: 426px) {
+  .carousel-inner {
+    height: 300px;
+  }
+  .text-cabezera {
+    width: 424px;
+    font-size: 16px;
+    margin-right: 10px;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
+  .text-cabezera span {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .text-cabezera--dos {
+    width: 420px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .text-cabezera--dos span {
+    margin: -10px 0;
+  }
+  .text-cabezera--banner {
+    width: 424px;
+    font-size: 16px;
+    margin-right: 0px;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+    padding-right: 15px;
+  }
+  .containerHome {
+    padding: 0;
+  }
+  .containerHome .bg15 {
+    display: none;
+  }
+  .centrar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  iframe {
+    width: 360px;
+    height: 250px;
+  }
+  .texto-under {
+    width: 96%;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .texto-final {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+  .before-footer {
+    display: none;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .carousel-item img {
+    height: 200px !important;
+    margin-bottom: 0;
+  }
+  .tituloPrincipal {
+    margin-top: -90px;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .nViajes {
+    display: none;
+  }
+  .titulo-banner-uno {
+    font-size: 30px;
+  }
+  .banner--rojo {
+    height: 25vh;
+    margin: 0 0 30px 0;
+  }
+  .col-7 {
+    width: 100%;
+  }
+  .col-4 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
