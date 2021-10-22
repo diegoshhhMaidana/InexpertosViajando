@@ -18,51 +18,52 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark gris  scrolling-navbar fixed-top">    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark gris scrolling-navbar fixed-top"> 
+            <div class="container-fluid">   
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
-            <div>
-                <ul class="navbar-nav mr-auto">  
-                    <li class="nav-item">
-                        <a class="nav-link" href="todasVisas.html">Working Holiday</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nuestrosViajes.html">Nuestros Viajes</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>         
-                </ul>
-            </div>
-
-            <div>
-                <a class="navbar-brand logo" href="index.html"><img src="imagenes/lologo.png" ></a>           
-            </div>
-            
-            <div>
-                <ul class="navbar-nav nav-flex-icons">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://acortar.link/FWzlKD" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://cutt.ly/Oyvufue" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://acortar.link/OVuSkr" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div> 
-        </div>  
-    </nav>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav ms-3">  
+                        <li class="nav-item">
+                            <a class="nav-link" href="todasVisas.html">Working Holiday</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nuestrosViajes.html">Nuestros Viajes</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>         
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand logo img-fluid" href="index.html"><img src="imagenes/lologo.png" ></a>           
+                </div>
+                
+                <div class="icons">
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://acortar.link/FWzlKD" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://cutt.ly/Oyvufue" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://acortar.link/OVuSkr" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>  
+        </nav>
+    </div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -72,21 +73,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagenes/nosotros.jpg" class="d-block w-100 " style="height: 535px;" alt="...">
+                <img src="imagenes/nosotros.jpg" class="d-block w-100 img-fluid" style="height: 535px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h6>Nuestros Viajes</h6>
                     <p>Te invitamos a ver las fotos, videos y experiencias que hemos juntado a travez de los años</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="imagenes/yessi.jpg " class="d-block w-100" style="height: 535px;" alt="...">
+                <img src="imagenes/yessi.jpg " class="d-block w-100 img-fluid" style="height: 535px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h6>¿Que Visas Existen?</h6>
                     <p>Descubre las Visas Working Holiday, Visas de Trabajo y Visas de Estudio</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="imagenes/pareja1.jpg" class="d-block w-100" style="height: 535px;" alt="...">
+                <img src="imagenes/pareja1.jpg" class="d-block w-100 img-fluid" style="height: 535px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h6>Canal de Youtube</h6>
                     <p>Ven a nuestro canal, te mostramos nuestras experiencias en Visas Working Holiday y otros paises que hemos conocido</p>
@@ -109,7 +110,7 @@
             <h1 class="tituloPrincipal centrar">Viaja y trabaja por el Mundo </h1>
             <hr>
             <p class="text-cabezera">Te acercamos toda la información necesaria, para que puedas armar todo tu viaje de <span> Working Holiday,</span></p>
-            <p class="text-cabezera--dos"><span>Visas de Trabajo </span>y mas, totalmente gratis, con info actualizada al día de hoy!</p>
+            <p class="text-cabezera"><span>Visas de Trabajo </span>y mas, totalmente gratis, con info actualizada al día de hoy!</p>
         </div>
         
         <div class="container row">   
@@ -230,6 +231,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>

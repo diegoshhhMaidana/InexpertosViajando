@@ -50,7 +50,7 @@ body{
 .nav{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 a{
 	text-decoration: none;
@@ -58,7 +58,7 @@ a{
 
 .logo img{
 	height: 50px;
-	margin-right: 250px;
+	margin-right: 610px;
 }
 
 .row {

@@ -7,6 +7,9 @@
 .img-up{
     @include main-image()
 }
+$px2: 20px;
+$ct: center;
+$w: #fff;
 
 //Galeria
 
@@ -62,31 +65,33 @@
     }
 }
 
+
+
 .inscripcion--abierta{
     background-color: green;
 	margin-top: 145px;
 	font-size: 16px;
-	color: white;
+	color: $w;
 }
 
 .inscripcion--cerrada{
     background-color: rgb(206, 17, 17);
 	margin-top: 145px;
 	font-size: 16px;
-	color: white;
+	color: $w;
 }
 
 .text-cabezera{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+    justify-content: $ct;
+    align-items: $ct;
+    font-size: $px2;
 }
 .text-cabezera--dos{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+    justify-content: $ct;
+    align-items: $ct;
+    font-size: $px2;
     margin-bottom: 50px;
 }
 .text-cabezera--dos span{
@@ -95,9 +100,9 @@
 }
 .text-cabezera--banner{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+    justify-content: $ct;
+    align-items: $ct;
+    font-size: $px2;
 }
 
 .text-cabezera--banner span{
@@ -143,7 +148,7 @@
     .text-cabezera--dos{
         width: 420px;
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: $px2;
         margin-right: 0;
         display: block;
         flex-direction: row;
@@ -169,8 +174,8 @@
     }
     .centrar {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: $ct;
+        justify-content: $ct;
     }
     iframe{
         width: 360px;
@@ -182,8 +187,8 @@
         margin-bottom: 0;
         padding: 10px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: $ct;
+        align-items: $ct;
     }
     .texto-final{
         font-size: 28px;
@@ -193,7 +198,7 @@
         display: none;
     }
     h1{
-        font-size: 20px;
+        font-size: $px2;
     }
     .carousel{
         width: 425px;
@@ -238,10 +243,25 @@
     h5{
         padding-top: 30px;
     }
+    .big-padding{
+        margin-top: 30px ;
+    }
     .primerParrafo{
         padding-top: 30px;
     }
     .btn-galeria a{
         font-size: 23px;
+    }
+    .container-fluid{
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start !important;
+        
+    }
+    .icons{
+        display: none;
+    }
+    .logo img{
+        display: none;   
     }
 }
