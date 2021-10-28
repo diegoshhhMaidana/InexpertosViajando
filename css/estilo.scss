@@ -127,11 +127,167 @@ $w: #fff;
     background-color: rgb(221, 219, 215);
 }
 
-
-@media screen and  (max-width: 426px){
+@media screen and  (max-width: 769px){
+    body{
+        width: 768px;
+    }
+    .container-fluid{
+        width: 768px;
+        height: auto;
+        margin: 0;
+        display:flex;
+        flex-direction: row;
+        align-items:calc(33.33%) !important;
+        justify-content: space-between !important;
+    }
+    .containerHome{
+        width: 730px;
+        padding: 0;
+    }
+    .bg29{
+        width: 710px;
+    }
+    .navbar-collapse{
+        width: auto;
+        flex-basis: 70% !important;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .logo{
+        margin: 0;
+    }
+    .logo img{
+        margin: 0px !important;
+    }
+    .icons ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .icons ul li{
+        width: auto;
+        margin: 0 10px;
+    }
     .carousel-inner{
         height: 300px;
     }
+    .carousel-item img{
+        width: 100%;
+        height: 274px !important;
+        margin-bottom: 0;
+        object-fit:contain;
+    }
+    .carousel{
+        max-width: 768px;
+        width: 768px;
+    }
+    .carousel-item img{
+        max-width: 768px;
+        width: 768px ;
+        height: 400px ;
+        margin-bottom: 0;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .tituloPrincipal{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .carousel-control-prev{
+        display: none;
+    }
+    .carousel-control-next{
+        display: none;
+    }
+    .texto-final{
+        font-size: 27px;
+    }
+    .texto-under{
+        font-size: 15px;
+    }
+
+    .text-cabezera{
+        width: 700px;
+        font-size: 17px;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .text-cabezera span{
+        margin: 0;
+        padding: 0;
+    }
+    .text-cabezera--dos{
+        max-width: 768px;
+        width: 768px;
+        font-size: 16px;
+        margin-bottom: $px2;
+        margin-right: 0;
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .text-cabezera--dos span{
+        margin: 0 0;
+    }
+    .before-footer{
+        width: 700px;        
+        margin: 10px;
+        margin-left: 25px;
+        padding: 40px 10px;
+        border-radius: 7px;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+    }
+    .input{
+        width: 49%;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    .btn-suscribir{
+        width: 49%;
+        margin: 0 0 0 20px;
+        padding: 5px 10px;
+        font-size: 17px;
+    }
+    .img-up{
+        height: 300px;
+    }
+    .col-7{
+        width: 768px;
+    }
+    .fixed-top{
+        width: 768px;
+    }
+    .centrar{
+        width: 768px;
+    }
+    .col-4{
+        display: none;
+    }
+}
+
+
+
+@media screen and  (max-width: 426px){
+    body{
+        width: 425px;
+    }
+    .carousel-inner{
+        height: 300px;
+    }
+    
 
     .text-cabezera{
         width: 424px;
@@ -167,10 +323,15 @@ $w: #fff;
         padding-right: 0;
     }
     .containerHome{
+        width: 400px;
         padding: 0;
     }
     .containerHome .bg15{
         display: none;
+    }
+    .bg29{
+        width: 370px;
+        height: 300px   ;
     }
     .centrar {
         display: flex;
@@ -191,6 +352,7 @@ $w: #fff;
         align-items: $ct;
     }
     .texto-final{
+        width: 400px;
         font-size: 28px;
         margin-left: 15px;
     }
@@ -205,7 +367,7 @@ $w: #fff;
     }
     .carousel-item img{
         width: 100%;
-        height: 200px !important;
+        height: 152px !important;
         margin-bottom: 0;
     }
     .carousel-indicators{
@@ -213,7 +375,7 @@ $w: #fff;
     }
     .tituloPrincipal{
         margin: 0;
-        margin-top: -90px;
+        margin-top: -150px;
     }
     .carousel-control-prev{
         display: none;
@@ -228,6 +390,7 @@ $w: #fff;
         font-size: 30px;
     }
     .banner--rojo{
+        width: 425px;
         height: 25vh;
         margin: 0 0 30px 0;
     }
@@ -256,7 +419,9 @@ $w: #fff;
         display:flex;
         flex-direction: row;
         align-items: flex-start !important;
-        
+    }
+    .fixed-top{
+        width: 425px;
     }
     .icons{
         display: none;
@@ -265,3 +430,4 @@ $w: #fff;
         display: none;   
     }
 }
+
